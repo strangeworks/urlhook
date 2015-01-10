@@ -1,0 +1,12 @@
+{
+  "name": "urlschema",
+  "version": "0.0.1",
+  "description": "change href for urlschema hook",
+  "license": "MIT",
+  "repo": "strangeworks/urlschema",
+  "main": "index.js",
+  "scripts": ["index.js"],
+  "keywords": [
+    "urls", "urlschema", "url"
+  ]
+}
