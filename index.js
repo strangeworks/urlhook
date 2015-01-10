@@ -1,7 +1,13 @@
 'use strict'
 
-module.exports = function(el) {
-  var urlHook = el.data('urlhook');
+var data = require('data'),
+    dom  = require('dom')
 
-  el.attr('href', urlHook)
+module.exports = function() {
+  var nodes = dom('[data-hook]'),
+      hookUrl = data(el, 'hook-url')
+
+  nodes.forEach(function(element, index){
+    element.attr('href', urlHook)  
+  });
 }

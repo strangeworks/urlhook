@@ -1,0 +1,5 @@
+node_modules
+build
+components
+testing
+npm-debug.log

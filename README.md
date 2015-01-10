@@ -1,7 +1,7 @@
-## Urlhook - add urlschema app hooks to your social links nav
+## Urlhook - friendly app hoooks
 
 ### Usage:
 
 ```html
-<a href="http://instagram.com/batman" data-urlhook="instagram://user?username=batman">Batman Instagram</a>
+<a href="http://instagram.com/batman" data-hook-url="instagram://user?username=batman">Batman Instagram</a>
 ```
