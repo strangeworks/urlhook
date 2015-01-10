@@ -1,12 +1,18 @@
 'use strict'
 
-var data = require('data'),
-    dom  = require('dom')
+var dom  = require('dom')
+
+var defaults = {
+  selector: '[data-hook]',
+  urlAttr: 'data-hook-url'
+}
 
 module.exports = function() {
-  var hookNodes = dom('[data-hook]');
-  
+  var hookNodes = dom(defaults.selector);
+
   hookNodes.each(function(el) {
-    el.attr('href', data(el, 'hook-url'))
+    var url = el.attr(defaults.urlAttr)
+
+    el.attr('href', url)
   })
 }
