@@ -4,10 +4,9 @@ var data = require('data'),
     dom  = require('dom')
 
 module.exports = function() {
-  var nodes = dom('[data-hook]'),
-      hookUrl = data(el, 'hook-url')
-
-  nodes.forEach(function(element, index){
-    element.attr('href', urlHook)  
-  });
+  var hookNodes = dom('[data-hook]');
+  
+  hookNodes.each(function(el) {
+    el.attr('href', data(el, 'hook-url'))
+  })
 }

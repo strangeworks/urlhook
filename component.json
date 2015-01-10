@@ -1,6 +1,6 @@
 {
   "name": "urlschema",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "change href for urlschema hook",
   "license": "MIT",
   "repo": "strangeworks/urlschema",
