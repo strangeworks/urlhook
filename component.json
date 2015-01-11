@@ -1,19 +1,16 @@
 {
-  "name": "urlschema",
+  "name": "urlhook",
+  "repo": "strangeworks/urlhook",
+  "description": "change href for urlhook hook",
   "version": "0.0.4",
-  "description": "change href for urlschema hook",
   "license": "MIT",
-  "repo": "strangeworks/urlschema",
-  "main": "index.js",
-  "scripts": [
-    "index.js"
-  ],
-  "keywords": [
-    "urls",
-    "urlschema",
-    "url"
-  ],
+  "keywords": [ "urls", "urlshema", "url"],
   "dependencies": {
-    "component/dom": "^1.0.6"
-  }
+    "component/dom": "*"
+  },
+  "development": {
+    "component/assert": "*",
+    "component/domify": "*"
+  },
+  "scripts": ["index.js"]
 }
